@@ -17,6 +17,7 @@ namespace eCommerce.Core
         {
             service.AddTransient<IUserService, UserService>();
             service.AddValidatorsFromAssemblyContaining<LoginRequestValidator>();
+            //service.AddValidatorsFromAssemblyContaining<RegisterRequestValidator>();
             return service;
         }
     }
